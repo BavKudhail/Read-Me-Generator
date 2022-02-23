@@ -7,22 +7,56 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "What is your project title",
+    message: "Enter project title",
   },
   {
     type: "input",
     name: "description",
-    message: "What is the project description?",
+    message: "Enter project description",
   },
   {
     type: "input",
     name: "installation",
-    message: "How do you install this project?",
+    message: "Enter installation instructions",
   },
   {
-      type:
-  }
+    type: "input",
+    name: "usage",
+    message: "Enter usage information",
+  },
+  {
+    type: "input",
+    name: "contribution",
+    message: "Enter contribution guidelines",
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "Enter test guidelines",
+  },
+  {
+    type: "list",
+    name: "license",
+    choices: [
+      "Apache License 2.0",
+      "GNU General Public License v3.0",
+      "MIT License",
+      'BSD 2-Clause "Simplified" License',
+      'BSD 3-Clause "New" or "Revised" License',
+      "Boost Software License 1.0",
+      "Creative Commons Zero v1.0 Universal",
+      "Eclipse Public License 2.0",
+      "GNU Affero General Public License v3.0",
+      "GNU General Public License v2.0",
+      "GNU Lesser General Public License v2.1",
+      "Mozilla Public License 2.0",
+      "The Unlicense",
+      "None",
+    ],
+  },
 ];
+
+inquirer.prompt(questions);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
