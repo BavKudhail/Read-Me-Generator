@@ -11,7 +11,7 @@ const questions = [
     message: "Enter project title",
     validate: (answer) => {
       if (answer === "") {
-        return "please enter a valid name";
+        return "please enter a project title";
       }
       return true;
     },
@@ -20,26 +20,56 @@ const questions = [
     type: "input",
     name: "description",
     message: "Enter project description",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter a project description";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "installation",
     message: "Enter installation instructions",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter the installation instruction";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "usage",
     message: "Enter usage information",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter the usage information";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "contribution",
     message: "Enter contribution guidelines",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter the contribution guidelines";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "test",
     message: "Enter test guidelines",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter the test guidelines";
+      }
+      return true;
+    },
   },
   {
     type: "list",
@@ -65,14 +95,25 @@ const questions = [
     type: "input",
     name: "github",
     message: "Enter Github username",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter your github username";
+      }
+      return true;
+    },
   },
   {
     type: "input",
     name: "email",
     message: "Enter email address",
+    validate: (answer) => {
+      if (answer === "") {
+        return "please enter a valid email address";
+      }
+      return true;
+    },
   },
 ];
-
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -85,10 +126,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
-    writeToFile("Generated-README.md", answers);
+    writeToFile("README.md", answers);
   });
 }
 
 // Function call to initialize app
 init();
-
