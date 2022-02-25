@@ -1,27 +1,65 @@
+# s
 
-  # node "c:\Users\User1\documents\bootcamp\homework\Read-Me-Generator\index.js"
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
-  ## Description
-  #
+## The motivation
 
-  ## Installation Instructions
-  
+s
 
-  ## Usage Information
-  
+## Description
 
-  ## Contribution Guidelines
-  
+s
 
-  ## Test Instructions
-  
+## Table of Contents
 
-  ## License Information
-  Apache License 2.0
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-  ## Github
-  
+## User Story
 
-  ## Email
-  
+s
 
+## Acceptance Criteria
+
+s
+
+## Technologies Used
+
+## Installation
+
+Follow these steps to install the project and get the development environment running:
+
+s
+
+## Usage
+
+s
+
+## Contributing
+
+s
+
+## Tests
+
+s
+
+## License
+
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+This application is licenses under Apache_2.0.
+
+## Questions
+
+If you have any questions about this project please feel free to email me a. You can also view more of my projects here https://www.github.com/bavkudhail
+
+### Github
+
+github.com/bavkudhail
+
+### Email
+
+a

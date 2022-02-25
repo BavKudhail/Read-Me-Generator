@@ -1,42 +1,63 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// Generate Markdown Function
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-  # ${data.title}
+  console.log(`${data.github}`);
+  console.log(`${data.repo}`);
+  return ` # ${data.title}
+
+  ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
+
+  
+  ## The motivation
+  ${data.motivation}
 
   ## Description
   ${data.description}
 
-  ## Installation Instructions
+
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions](#questions)
+
+
+  ## User Story
+  ${data.userStory}
+  
+  ## Acceptance Criteria
+  ${data.acceptanceCriteria}
+
+  ## Technologies Used
+  ${data.technologies}
+
+  ## Installation 
+  Follow these steps to install the project and get the development environment running:
+
   ${data.installation}
 
-  ## Usage Information
+  ## Usage 
   ${data.usage}
 
-  ## Contribution Guidelines
+  ## Contributing
   ${data.contribution}
 
-  ## Test Instructions
+  ## Tests
   ${data.test}
 
-  ## License Information
-  ${data.license}
+  ## License
+  ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
+  This application is licenses under ${data.license}.
+      
+  ## Questions
+  If you have any questions about this project please feel free to email me ${data.email}. You can also view more of my projects here https://www.github.com/${data.github}
 
-  ## Github
-  ${data.github}
+  ### Github
+  github.com/${data.github}
 
-  ## Email
+  ### Email
   ${data.email}
 
 `;
