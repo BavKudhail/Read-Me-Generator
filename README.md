@@ -1,14 +1,14 @@
-# s
+# Project Title
 
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## The motivation
 
-s
+Motivation for development
 
 ## Description
 
-s
+Project description
 
 ## Table of Contents
 
@@ -21,40 +21,42 @@ s
 
 ## User Story
 
-s
+User story
 
 ## Acceptance Criteria
 
-s
+Acceptance Criteria
 
 ## Technologies Used
+
+HTML,CSS,Javascript,Node.JS
 
 ## Installation
 
 Follow these steps to install the project and get the development environment running:
 
-s
+Installation Instructions
 
 ## Usage
 
-s
+Usage Information
 
 ## Contributing
 
-s
+Contribution Guidelines
 
 ## Tests
 
-s
+Test Guidlines
 
 ## License
 
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-This application is licenses under Apache_2.0.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+This application is licenses under MIT.
 
 ## Questions
 
-If you have any questions about this project please feel free to email me a. You can also view more of my projects here https://www.github.com/bavkudhail
+If you have any questions about this project please feel free to email me bavkudhail@gmail.com. You can also view more of my projects here https://www.github.com/bavkudhail
 
 ### Github
 
@@ -62,4 +64,4 @@ github.com/bavkudhail
 
 ### Email
 
-a
+bavkudhail@gmail.com

@@ -5,6 +5,77 @@ const inquirer = require("inquirer");
 // internal modules
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// choose a license
+const licenses = [
+  {
+    name: "Apache License 2.0",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+      licenseUrl: "https://opensource.org/licenses/Apache-2.0",
+    },
+  },
+  {
+    name: "GNU General Public License v3.0",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-GPLv3-blue.svg",
+      licenseUrl: "https://www.gnu.org/licenses/gpl-3.0",
+    },
+  },
+  {
+    name: 'BSD 2-Clause "Simplified" License',
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg",
+      licenseUrl: "https://opensource.org/licenses/BSD-2-Clause",
+    },
+  },
+  {
+    name: 'BSD 3-Clause "New" or "Revised" License',
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
+      licenseUrl: "(https://opensource.org/licenses/BSD-3-Clause",
+    },
+  },
+  {
+    name: "Boost Software License 1.0",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
+      licenseUrl: "https://www.boost.org/LICENSE_1_0.txt",
+    },
+  },
+  {
+    name: "Eclipse Public License 1.0",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-EPL_1.0-red.svg",
+      licenseUrl: "https://opensource.org/licenses/EPL-1.0",
+    },
+  },
+  {
+    name: "GNU General Public License v2.0",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-GPL_v2-blue.svg",
+      licenseUrl: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
+    },
+  },
+  {
+    name: "MIT License",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-MIT-yellow.svg",
+      licenseUrl: "https://opensource.org/licenses/MIT",
+    },
+  },
+  {
+    name: "IBM Public License Version 1.0",
+    value: {
+      badgeUrl: "https://img.shields.io/badge/License-IPL_1.0-blue.svg",
+      licenseUrl: "https://opensource.org/licenses/IPL-1.0",
+    },
+  },
+  {
+    name: "None",
+    value: "None",
+  },
+];
+
 // questions array
 const questions = [
   // project title
@@ -127,17 +198,7 @@ const questions = [
     type: "list",
     name: "license",
     default: "MIT License",
-    choices: [
-      "Apache_2.0",
-      "Boost_1.0",
-      "BSD_3--Clause",
-      "BSD_2--Clause",
-      "EPL_1.0",
-      "GPLv3",
-      "GPL_v2",
-      "MIT",
-      "None",
-    ],
+    choices: licenses,
   },
   // github username
   {
@@ -178,11 +239,11 @@ const questions = [
 ];
 
 // Function to create a README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, generateMarkdown(data), (err) =>
+function writeToFile(file, data) {
+  fs.writeFile(file, generateMarkdown(data), (err) =>
     err
       ? console.log("Sorry, there was an error: " + err)
-      : console.log("success")
+      : console.log("Success")
   );
 }
 

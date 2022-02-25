@@ -1,8 +1,15 @@
 // Generate Markdown Function
 
+function renderLicenseBadge(license) {}
+
+
+function renderLicenseLink(license) {}
+
+
+function renderLicenseSection(license) {}
+
+
 function generateMarkdown(data) {
-  console.log(`${data.github}`);
-  console.log(`${data.repo}`);
   return ` # ${data.title}
 
   ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
@@ -25,12 +32,15 @@ function generateMarkdown(data) {
 
 
   ## User Story
+
   ${data.userStory}
   
   ## Acceptance Criteria
+
   ${data.acceptanceCriteria}
 
   ## Technologies Used
+
   ${data.technologies}
 
   ## Installation 
@@ -39,12 +49,15 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage 
+
   ${data.usage}
 
   ## Contributing
+
   ${data.contribution}
 
   ## Tests
+
   ${data.test}
 
   ## License
