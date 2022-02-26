@@ -32,6 +32,13 @@
 
   ## Usage 
   1 -  clone the repository 
+  
+  ## Screenshot
+  ![terminal screenshot](https://raw.githubusercontent.com/BavKudhail/Read-Me-Generator/main/images/screenshot.JPG)
+  
+  ## Walkthrough
+  https://user-images.githubusercontent.com/93915846/155854603-056e4ccb-589e-4c17-ba03-c71c40e418d0.mp4
+
 
 
   ## Contributing
