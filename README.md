@@ -22,9 +22,9 @@
 
 
   ## Technologies Used
-  *Javascript
-  *Inquirer
-  *Node.JS
+  * Javascript
+  * Inquirer
+  * Node.JS
 
 
   ## Installation 
