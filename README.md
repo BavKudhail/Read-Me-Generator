@@ -44,7 +44,7 @@
   ## Screenshot
   ![terminal screenshot](https://raw.githubusercontent.com/BavKudhail/Read-Me-Generator/main/assets/images/screenshot.JPG)
   
-  ### [Click here to view a generated sample](https://github.com/BavKudhail/Read-Me-Generator/blob/main/sampleREADME.md)
+  [Click here to view a generated sample](https://github.com/BavKudhail/Read-Me-Generator/blob/main/sampleREADME.md)
   
   ## Walkthrough
   https://user-images.githubusercontent.com/93915846/155854603-056e4ccb-589e-4c17-ba03-c71c40e418d0.mp4
