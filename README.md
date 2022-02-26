@@ -42,7 +42,7 @@
   
   
   ## Screenshot
-  ![terminal screenshot](https://raw.githubusercontent.com/BavKudhail/Read-Me-Generator/main/images/screenshot.JPG)
+  ![terminal screenshot] (https://raw.githubusercontent.com/BavKudhail/Read-Me-Generator/main/images/screenshot.JPG)
   
   
   
