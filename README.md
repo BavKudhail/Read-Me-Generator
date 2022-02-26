@@ -22,19 +22,29 @@
 
 
   ## Technologies Used
-  Node.JS
+  *Javascript
+  *Inquirer
+  *Node.JS
 
 
   ## Installation 
-  Follow these steps to install the project and get the development environment running:
-  To install this application:
+   ```
+  1 -  clone the repository 
+  2 -  type npi in the terminal to install all dependencies
+  ```
 
 
   ## Usage 
-  1 -  clone the repository 
+  ```
+  To use the generator simply type node index.js in the terminal and follow the prompts
+  ```
+  
+  
   
   ## Screenshot
   ![terminal screenshot](https://raw.githubusercontent.com/BavKudhail/Read-Me-Generator/main/images/screenshot.JPG)
+  
+  
   
   ## Walkthrough
   https://user-images.githubusercontent.com/93915846/155854603-056e4ccb-589e-4c17-ba03-c71c40e418d0.mp4
