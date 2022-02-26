@@ -3,15 +3,15 @@
   ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
-  ## The Motivation
+  🚀 ## The Motivation
   When creating an open source project on GitHub, it’s important to have a high-quality README for the app. The ReadMe generator will allow the developer to spend more time on code and less on the read me. 
 
 
-  ## Description
+  ### Description
   The goal is to create a command-line application that dynamically generates a professional README.md file from a user's input.
 
 
-  ## Table of Contents
+  🧐 ## Table of Contents
   * [Technologies Used](#technologies-used)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -21,13 +21,13 @@
   * [Questions](#questions)
 
 
-  ## Technologies Used
+  💻 ## Technologies Used
   * Javascript
   * Inquirer
   * Node.JS
 
 
-  ## Installation 
+  🛠️ ## Installation 
   
   1. Clone the repository
    ```
@@ -46,24 +46,24 @@
   node index.js
   ```
 
-  ## Usage 
+  🛠️ ## Usage 
   ```
   To use the generator simply type node index.js in the terminal and follow the prompts
   ```
   
   
   
-  ## Screenshot
+  📸 ## Screenshot
   ![terminal screenshot](https://raw.githubusercontent.com/BavKudhail/Read-Me-Generator/main/assets/images/screenshot.JPG)
   
   [Click here to view a generated sample](https://github.com/BavKudhail/Read-Me-Generator/blob/main/sampleREADME.md)
   
-  ## Walkthrough
+  📽️ ## Walkthrough
   https://user-images.githubusercontent.com/93915846/155854603-056e4ccb-589e-4c17-ba03-c71c40e418d0.mp4
 
 
 
-  ## Contributing
+  🍰 ## Contributing
   There are no guidelines for contributing at this time.
 
 
@@ -77,10 +77,10 @@
   This application is covered under the MIT License. For further information click: 
   https://opensource.org/licenses/MIT
   
-  ## Questions
+  📧 ## Questions
   If you have any questions about this project please feel free to email me @ bavkudhail@gmail.com. You can also view more of my projects here https://www.github.com/bavkudhail
 
 
-  ### Email
+  📧 ### Email
   bavkudhail@gmail.com
 
