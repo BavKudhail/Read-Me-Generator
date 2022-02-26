@@ -28,11 +28,23 @@
 
 
   ## Installation 
+  
+  1. Clone the repository
    ```
-  1 -  clone the repository 
-  2 -  type npi in the terminal to install all dependencies
+   https://github.com/BavKudhail/Read-Me-Generator.git
   ```
-
+  2. Change the working directory
+  ```
+  cd read-me-generator
+  ```
+  4. Install dependencies
+   ```
+  npm i
+  ```
+  6. Run the app
+  ```
+  node index.js
+  ```
 
   ## Usage 
   ```
