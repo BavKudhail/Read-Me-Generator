@@ -3,7 +3,7 @@
   ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
-  🚀 ## The Motivation
+  🚀## The Motivation
   When creating an open source project on GitHub, it’s important to have a high-quality README for the app. The ReadMe generator will allow the developer to spend more time on code and less on the read me. 
 
 
