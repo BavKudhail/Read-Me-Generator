@@ -10,64 +10,76 @@ const licenses = [
   {
     name: "Apache License 2.0",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
-      licenseUrl: "https://opensource.org/licenses/Apache-2.0",
+      title: "Apache License 2.0",
+      licenseBadge: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+      badgeLink: "https://opensource.org/licenses/Apache-2.0",
     },
   },
   {
     name: "GNU General Public License v3.0",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-GPLv3-blue.svg",
-      licenseUrl: "https://www.gnu.org/licenses/gpl-3.0",
+      title: "GNU General Public License v3.0",
+      licenseBadge: "https://img.shields.io/badge/License-GPLv3-blue.svg",
+      licenseLink: "https://www.gnu.org/licenses/gpl-3.0",
     },
   },
   {
     name: 'BSD 2-Clause "Simplified" License',
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg",
+      title: 'BSD 2-Clause "Simplified" License',
+      licenseBadge:
+        "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg",
       licenseUrl: "https://opensource.org/licenses/BSD-2-Clause",
     },
   },
   {
     name: 'BSD 3-Clause "New" or "Revised" License',
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
+      title: 'BSD 3-Clause "New" or "Revised" License',
+      licenseBadge:
+        "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
       licenseUrl: "(https://opensource.org/licenses/BSD-3-Clause",
     },
   },
   {
     name: "Boost Software License 1.0",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
-      licenseUrl: "https://www.boost.org/LICENSE_1_0.txt",
+      title: "Boost Software License 1.0",
+      licenseBadge:
+        "https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
+      licenseLink: "https://www.boost.org/LICENSE_1_0.txt",
     },
   },
   {
     name: "Eclipse Public License 1.0",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-EPL_1.0-red.svg",
-      licenseUrl: "https://opensource.org/licenses/EPL-1.0",
+      title: "Eclipse Public License 1.0",
+      licenseBadge: "https://img.shields.io/badge/License-EPL_1.0-red.svg",
+      licenseLink: "https://opensource.org/licenses/EPL-1.0",
     },
   },
   {
     name: "GNU General Public License v2.0",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-GPL_v2-blue.svg",
-      licenseUrl: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
+      title: "GNU General Public License v2.0",
+      licenseBadge: "https://img.shields.io/badge/License-GPL_v2-blue.svg",
+      licenseLink: "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
     },
   },
   {
     name: "MIT License",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-MIT-yellow.svg",
-      licenseUrl: "https://opensource.org/licenses/MIT",
+      title: "MIT License",
+      licenseBadge: "https://img.shields.io/badge/License-MIT-yellow.svg",
+      licenseLink: "https://opensource.org/licenses/MIT",
     },
   },
   {
     name: "IBM Public License Version 1.0",
     value: {
-      badgeUrl: "https://img.shields.io/badge/License-IPL_1.0-blue.svg",
-      licenseUrl: "https://opensource.org/licenses/IPL-1.0",
+      title: "IBM Public License Version 1.0",
+      licenseBadge: "https://img.shields.io/badge/License-IPL_1.0-blue.svg",
+      licenseLink: "https://opensource.org/licenses/IPL-1.0",
     },
   },
   {
@@ -114,30 +126,6 @@ const questions = [
       return true;
     },
   },
-  // user story
-  {
-    type: "input",
-    name: "userStory",
-    message: "Enter the user story",
-    validate: (input) => {
-      if (!input) {
-        return "please enter a user story";
-      }
-      return true;
-    },
-  },
-  // acceptance criteria
-  {
-    type: "input",
-    name: "acceptanceCriteria",
-    message: "Enter the acceptance criteria",
-    validate: (input) => {
-      if (!input) {
-        return "please enter the acceptance criteria";
-      }
-      return true;
-    },
-  },
   // select the technologies used
   {
     type: "checkbox",
@@ -165,6 +153,18 @@ const questions = [
     validate: (input) => {
       if (!input) {
         return "please enter the usage information";
+      }
+      return true;
+    },
+  },
+  // screenshots
+  {
+    type: "input",
+    name: "screenshots",
+    message: "Enter a link to your screenshot",
+    validate: (input) => {
+      if (!input) {
+        return "please enter a link to your screenshot";
       }
       return true;
     },
@@ -197,7 +197,7 @@ const questions = [
   {
     type: "list",
     name: "license",
-    default: "MIT License",
+    message: "select a license",
     choices: licenses,
   },
   // github username
@@ -243,7 +243,7 @@ function writeToFile(file, data) {
   fs.writeFile(file, generateMarkdown(data), (err) =>
     err
       ? console.log("Sorry, there was an error: " + err)
-      : console.log("Success")
+      : console.log("Successfully generated markdown")
   );
 }
 

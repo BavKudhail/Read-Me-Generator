@@ -1,79 +1,97 @@
-// Generate Markdown Function
-
-function renderLicenseBadge(license) {}
-
-
-function renderLicenseLink(license) {}
+const generateMarkdown = (data) => {
+  return ` 
+  # ${data.title}
+  ${renderLicenseBadge(data.license)}
 
 
-function renderLicenseSection(license) {}
-
-
-function generateMarkdown(data) {
-  return ` # ${data.title}
-
-  ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
-
-  
-  ## The motivation
+  ## The Motivation
   ${data.motivation}
+
 
   ## Description
   ${data.description}
 
 
   ## Table of Contents
+  * [Technologies Used](#technologies-used)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Screenshots](#screenshots)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [License](#license)
   * [Questions](#questions)
 
 
-  ## User Story
-
-  ${data.userStory}
-  
-  ## Acceptance Criteria
-
-  ${data.acceptanceCriteria}
-
   ## Technologies Used
-
   ${data.technologies}
+
 
   ## Installation 
   Follow these steps to install the project and get the development environment running:
-
   ${data.installation}
 
-  ## Usage 
 
+  ## Usage 
   ${data.usage}
 
-  ## Contributing
 
+  ## Screenshot
+  ${data.screenshots}
+
+
+  ## Contributing
   ${data.contribution}
 
-  ## Tests
 
+  ## Tests
   ${data.test}
 
-  ## License
-  ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
-  This application is licenses under ${data.license}.
-      
-  ## Questions
-  If you have any questions about this project please feel free to email me ${data.email}. You can also view more of my projects here https://www.github.com/${data.github}
 
-  ### Github
-  github.com/${data.github}
+  ## License
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
+  
+  ## Questions
+  If you have any questions about this project please feel free to email me @ ${
+    data.email
+  }. You can also view more of my projects here https://www.github.com/${
+    data.github
+  }
+
 
   ### Email
   ${data.email}
 
 `;
+};
+
+// Generate Markdown Function
+const renderLicenseBadge = (license) => {
+  if (license === "None") {
+    return "";
+  } else {
+    return `![License](${license.licenseBadge})`;
+  }
+};
+
+const renderLicenseLink = (license) => {
+  if (license === "None") {
+    return "";
+  } else {
+    return `${license.licenseLink}`;
+  }
+};
+
+function renderLicenseSection(license) {
+  if (license === "None") {
+    return `No license was selected`;
+  } else {
+    console.log(license);
+    return `
+  This application is covered under the ${license.title}. For further information click: `;
+  }
 }
 
 module.exports = generateMarkdown;
