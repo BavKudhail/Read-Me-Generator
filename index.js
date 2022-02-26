@@ -157,18 +157,6 @@ const questions = [
       return true;
     },
   },
-  // screenshots
-  {
-    type: "input",
-    name: "screenshots",
-    message: "Enter a link to your screenshot",
-    validate: (input) => {
-      if (!input) {
-        return "please enter a link to your screenshot";
-      }
-      return true;
-    },
-  },
   // contribution
   {
     type: "input",

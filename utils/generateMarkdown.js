@@ -16,7 +16,6 @@ const generateMarkdown = (data) => {
   * [Technologies Used](#technologies-used)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Screenshots](#screenshots)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [License](#license)
@@ -34,10 +33,6 @@ const generateMarkdown = (data) => {
 
   ## Usage 
   ${data.usage}
-
-
-  ## Screenshot
-  ${data.screenshots}
 
 
   ## Contributing
